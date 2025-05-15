@@ -1,0 +1,165 @@
+/* Updated CSS with Cool & Professional Theme */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(to right, #0f172a, #1e293b);
+    color: #f8fafc;
+    overflow-x: hidden;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    padding: 16px 8%;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    transition: background 0.3s ease;
+  }
+  
+  .logo {
+    font-size: 26px;
+    font-weight: 700;
+    color: #3b82f6;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+    letter-spacing: 1px;
+  }
+  
+  .navbar a {
+    position: relative;
+    font-size: 17px;
+    margin-left: 30px;
+    color: #f8fafc;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    left: 0;
+    bottom: -4px;
+    background-color: #3b82f6;
+    transition: width 0.3s ease;
+  }
+  
+  .navbar a:hover::after,
+  .navbar a.active::after {
+    width: 100%;
+  }
+  
+  .navbar a:hover,
+  .navbar a.active {
+    color: #3b82f6;
+  }
+  
+  .home,
+  .about,
+  .projects-section,
+  .skills-section,
+  .contact-section {
+    background: linear-gradient(135deg, #1e293b, #0f172a);
+    color: #f8fafc;
+    min-height: 100vh;
+    animation: fadeIn 1s ease forwards;
+  }
+  
+  .home-content h1,
+  .about-text h1,
+  .section-title {
+    color: #3b82f6;
+  }
+  
+  .home-content .role,
+  .skill-card,
+  .project-card h3,
+  .contact-info p {
+    color: #3b82f6;
+  }
+  
+  .project-card,
+  .skill-card,
+  .contact-form input,
+  .contact-form textarea {
+    background-color: #334155;
+    color: #f8fafc;
+  }
+  
+  .btn-modern {
+    background-color: #3b82f6;
+    color: #ffffff;
+    box-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
+  }
+  
+  .btn-modern:hover {
+    background-color: #60a5fa;
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.6);
+  }
+  
+  .project-card:hover,
+  .skill-card:hover {
+    box-shadow: 0 0 25px rgba(59, 130, 246, 0.3);
+  }
+  
+  .profile-image img {
+    background: linear-gradient(#1e293b, #1e293b) padding-box,
+                linear-gradient(135deg, #3b82f6, #60a5fa, #93c5fd) border-box;
+    box-shadow: 0 0 25px rgba(59, 130, 246, 0.5), 0 8px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .profile-image img:hover {
+    box-shadow: 0 0 30px rgba(59, 130, 246, 0.7), 0 10px 25px rgba(0, 0, 0, 0.4);
+  }
+  
+  .contact-description {
+    color: #cbd5e1;
+  }
+  
+  .contact-form input::placeholder,
+  .contact-form textarea::placeholder {
+    color: #94a3b8;
+  }
+  
+  @keyframes slideRight {
+    0% { transform: translateX(-100px); opacity: 0; }
+    100% { transform: translateX(0); opacity: 1; }
+  }
+  
+  @keyframes slideLeft {
+    0% { transform: translateX(100px); opacity: 0; }
+    100% { transform: translateX(0); opacity: 1; }
+  }
+  
+  @keyframes slideBottom {
+    0% { transform: translateY(100px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+  }
+  
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @keyframes fadeInUp {
+    0% { transform: translateY(30px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+  }
+  
